@@ -1,56 +1,38 @@
 <img width="1879" height="905" alt="image" src="https://github.com/user-attachments/assets/964ab0f6-0d9d-49a6-8f0a-65ca28cb60fa" />
 # Smart Resume Analyser – AI-Powered Resume Evaluation Platform:
 Smart Resume Analyser is a web platform designed to help students, freshers, and professionals improve their resumes using AI-driven insights. The platform focuses on ATS optimization, formatting accuracy, grammar correction, keyword relevance, and industry-specific enhancement. It enables users to build strong, job-ready resumes using intelligent guidance, analytics, and interactive tools.
+---
 
-**Table of Contents**
-
-Features
-
-Project Structure
-
-Setup & Installation
-
-Main Code Sequences & Architecture
-
-Frontend (HTML/CSS/JS)
-
-Backend (Node.js/Express/OpenAI)
-
-Resume Analysis Engine
-
-Authentication
-
-AI Chatbot Integration
-
-Customization
-
-License
-
-Contact
-
-Example Screenshots
-
-Deployment Instructions
+## Table of Contents**
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Setup & Installation](#setup--installation)
+- [Main Code Sequences & Architecture](#main-code-sequences--architecture)
+  - [Frontend (HTML/CSS/JS)](#frontend-htmlcssjs)
+  - [Backend (Node.js/Express/OpenAI)](#backend-nodejsexpressopenai)
+- [Resume Analysis Engine](#resume-analysis-engine)
+- [Authentication](#authentication)
+- [AI Chatbot Integration](#ai-chatbot-integration)
+- [Customization](#customization)
+- [License](#license)
+- [Contact](#contact)
+- [Example Screenshots](#example-screenshots)
+- [Deployment Instructions](#deployment-instructions)
+--- 
 
 ## Features:
-
-**AI Resume Evaluation:** ATS-style scoring with feedback on grammar, formatting, keywords, and job-specific optimization.
-
-**Keyword Optimization:** Auto-suggests missing skills, action verbs, and domain keywords.
-
-**ATS Score Generator:** Real-time scoring based on structure, readability, job match, and industry standards.
-
-**PDF/Text Extractor:** Upload resumes in PDF/DOCX/TXT for parsing and AI analysis.
-
-**Job Role Templates:** Preloaded resume templates for roles like SDE, Full-Stack Developer, Salesforce Developer, and more.
-
-**AI Chat Assistant:** Guides users on resume writing, interview preparation, and job readiness.
-
-**Authentication:** Email/password and Google login via Firebase.
-
-**Responsive UI:** Clean, fast, mobile-friendly dashboard.
+- **AI Resume Evaluation:** ATS-style scoring with feedback on grammar, formatting, keywords, and job-specific optimization.
+- **Keyword Optimization:** Auto-suggests missing skills, action verbs, and domain keywords.
+- **ATS Score Generator:** Real-time scoring based on structure, readability, job match, and industry standards.
+- **PDF/Text Extractor:** Upload resumes in PDF/DOCX/TXT for parsing and AI analysis.
+- **Job Role Templates:** Preloaded resume templates for roles like SDE, Full-Stack Developer, Salesforce Developer, and more.
+- **AI Chat Assistant:** Guides users on resume writing, interview preparation, and job readiness.
+- **Authentication:** Email/password and Google login via Firebase.
+- **Responsive UI:** Clean, fast, mobile-friendly dashboard.
+---
 
 ## Project Structure:
+```
 /
 ├── index.html                 # Main UI (upload panel, dashboard, analysis cards)
 ├── stylesheet.css             # All styles (responsive, dark mode, modern UI)
@@ -64,206 +46,114 @@ Deployment Instructions
 ├── package.json               # Dependencies and scripts
 └── .env                       # Your OpenAI API key & configs
 
+```
+---
+
 ## Setup & Installation:
-**1. Clone the Repository**
+### 1. Clone the Repository**
+```bash
 git clone https://github.com/yourusername/smart-resume-analyser.git
 cd smart-resume-analyser
+```
 
-**2. Install Dependencies**
+### 2. Install Dependencies**
+```bash
 npm install
+```
 
-**3. Configure Environment Variables**
+### 3. Configure Environment Variables**
 Create a .env file:
-
+```
 OPENAI_API_KEY=your_openai_api_key_here
+```
 
-**4. Start the Server**
+### 4. Start the Server**
+```bash
 npm start
-
-The app will run at:
-http://localhost:3000
-
-## Main Code Sequences & Architecture:
-**Frontend (HTML/CSS/JS)**
-**index.html**
-
-Layout: Navbar, dashboard, upload card, ATS score cards, suggestions panel.
-
-Sections: Resume Analyzer, Templates, Chat Assistant, Profile.
-
-Loads: main.js, analyser.js, auth.js.
-
-**stylesheet.css**
-
-Modern UI with neumorphism, flex layouts, and responsive design.
-
-Dark/Light modes using CSS variables.
-
-Components: upload box, score cards, charts, buttons, modal dialogs.
-
-**main.js**
-
-Resume Upload: Drag-and-drop & file picker.
-
-Loader Animations: Progress bar, analysis animations.
-
-UI Updates: Rendering ATS score, charts, keyword lists.
-
-Notifications: Success/error toast messages.
-
-**auth.js**
-
-Firebase email/password and Google authentication.
-
-Tracks user sessions.
-
-Updates navbar based on login state.
-
-Stores user analysis history.
-
-**analyser.js**
-
-Sends extracted resume text to the backend.
-
-Renders AI feedback in categorized sections:
-
--Formatting
-
--Experience & Action Verbs
-
--Skills & ATS Keywords
-
--Grammar Corrections
-
--Job Match Percentage
-
-Displays improvement suggestions with visual indicators.
-
-## Backend (Node.js/Express/OpenAI)
-**server.js**
-
-Handles routes for:
-
-Resume analysis
-
-Parsing files
-
-Template delivery
-
-Integrates OpenAI for:
-
-ATS scoring
-
-Keyword extraction
-
-Resume rewriting
-
-Conversation-based context for the AI chatbot.
-
-Health endpoint: /api/health
-
-**parser.js**
-
-Uses pdf-parse & docx libraries.
-
-Extracts clean text while removing formatting issues.
-
-Prepares data for the AI analyser.
-
-**package.json**
-
-Dependencies:
-
-express
-
-openai
-
-multer (file upload)
-
-pdf-parse / docx (resume parsing)
-
-dotenv
-
-firebase-admin
-
-## Resume Analysis Engine:
-
-**Text Processing:** Splits resume into Skills, Experience, Education, Projects.
-
-**Keyword Matching:** Compares against job-role specific skill banks.
-
-**ATS Simulation:**
-Header structure
-
-Readability metrics
-
-Proper section ordering
-
-Bullet-based achievements
-
-Quantified impact
-
-**AI Suggestions:**
-
-Concise rewrites
-
-Missing metrics
-
-Recommended keywords
-
-Strengths & weaknesses summary
-
-**Authentication:**
-
-Email & Password Login
-
-Google Authentication
-
-Password Reset
-
-Session Tracking
-
-Saved analysis history
-
-**AI Chatbot Integration:**
-
-Resume rewriting assistant
-
-Job role-specific advice
-
-ATS keyword suggestions
-
-Interview preparation tips
-
-Context-aware responses
-
-**Customization:**
-
-Change theme, colors, fonts in stylesheet.css.
-
-Add new resume templates in /templates/.
-
-Modify job-role keyword banks in analyser.js.
-
-Extend backend routes for advanced AI features.
-
-**License:**
-
-This project is for educational and non-commercial use.
-Contact the developer for professional or commercial licensing.
-
-**Contact:**
-
-For feedback, contributions, or queries, reach out:
-**Pranjal Khandelwal**
-
-LinkedIn: https://www.linkedin.com/in/pranjal-khandelwal-1a46682a4/
-
-GitHub: https://github.com/golu19102003
-
-Twitter: https://x.com/Pranjal76009498
-
-Instagram: https://www.instagram.com/pranjal19102003_2.0/
+```
+The app will be available at [http://localhost:3000].
+
+## Main Code Sequences & Architecture
+### Frontend (HTML/CSS/JS)
+#### `index.html`
+- **Layout**: , dashboard, upload card, ATS score cards, suggestions panel.
+- **Sections**: Resume Analyzer, Templates, Chat Assistant, Profile.
+- **Loads**: Loads `main.js`, `analyser.js`, `auth.js`.
+
+#### `stylesheet.css`
+- Modern UI with neumorphism design.
+- Responsive, mobile-first layout.
+- Dark/Light theme using CSS variables.
+- **Components**: Upload box, score cards, buttons, modals.
+
+#### `main.js`
+- Resume upload (drag & drop + file picker).
+- Animated loaders and progress bar.
+- Renders ATS score, keyword cloud, grammar checks.
+- Toast notifications for UI alerts.
+
+#### `auth.js`
+- Firebase authentication (Email/Password + Google).
+- Tracks session states.
+- Updates UI based on login status.
+- Saves user analysis history.
+
+#### `analyser.js`
+- Sends extracted resume text to backend.
+- Renders AI suggestions (formatting, keywords, grammar, etc.).
+- Shows job match %, improvement stats, and color-coded badges.
+
+### Backend (Node.js / Express / OpenAI)
+#### `server.js`
+- API routes for resume analysis, parsing, templates.
+- OpenAI integration for ATS scoring, keyword extraction, rewrites.
+- Health check endpoint.
+- Serves static frontend + API.
+
+#### `parser.js`
+- PDF & DOCX parsing (pdf-parse, docx).
+- Cleans and prepares text for ATS analysis.
+- Outputs structured resume content.
+
+#### `package.json`
+- **Dependencies:** express, openai, multer, pdf-parse, docx, dotenv, firebase-admin.
+- Resume Analysis Engine.
+- Extracts skills, experience, education, projects.
+- Matches job-role keywords.
+- Simulates ATS scoring (structure, readability, bullets, impact metrics).
+- Provides AI-driven suggestions and rewrites.
+
+## Authentication
+- Email & password login.
+- Google sign-in.
+- Password reset.
+- Session tracking.
+- Saves previous analysis reports.
+
+## AI Chatbot Integration
+- Resume rewriting.
+- Job-role guidance.
+- ATS keyword suggestions.
+- Interview preparation tips.
+- Context-aware responses.
+
+## Customization
+- Edit colors & fonts in stylesheet.css.
+- Add new templates in /templates.
+- Update job-role keywords in analyser.js.
+- Add new backend AI features easily.
+
+## License
+- Educational and non-commercial use only.
+- Contact developer for commercial usage.
+
+## Contact
+For feedback, contributions, or queries:
+👤 Pranjal Khandelwal
+🔗 LinkedIn: https://www.linkedin.com/in/pranjal-khandelwal-1a46682a4/
+💻 GitHub: https://github.com/golu19102003
+🐦 Twitter: https://x.com/Pranjal76009498
+📸 Instagram: https://www.instagram.com/pranjal19102003_2.0/---
 
 **Example Screenshots**
 Dashboard Home
@@ -284,39 +174,30 @@ AI Suggestions Panel
 
 
 ## Deployment Instructions:
-Local Deployment
+### Local Deployment
+ ```bash
 git clone https://github.com/yourusername/smart-resume-analyser.git
 npm install
 npm start
-
-
 Runs at: http://localhost:3000
+```
 
-**Cloud Deployment (Render/Heroku/Vercel)**
+### Cloud Deployment (Render/Heroku/Vercel)
+- Push project to GitHub.
+- Create new web service.
+- Add env variables:
+- OPENAI_API_KEY
+- Deploy.
 
-Push project to GitHub.
+### Firebase Setup
+- Enable Email/Password + Google Auth.
+- Add Firebase config to auth.js.
 
-Create new web service.
-
-Add env variables:
-
-OPENAI_API_KEY
-
-Deploy.
-
-**Firebase Setup**
-
-Enable Email/Password + Google Auth.
-
-Add Firebase config to auth.js.
-
-**Optional**
-
-Custom Domain
-
-HTTPS (auto in most cloud platforms)
-
-Analytics
+### Optional Enhancements.
+- Set up a custom domain.
+- Enable automatic HTTPS.
+- Add analytics for user tracking.
+- Improve performance using caching/CDN.
 
 Performance Optimization
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
