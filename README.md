@@ -20,6 +20,8 @@ Smart Resume Analyser is a web platform designed to help students, freshers, and
 - [Contact](#contact)
 - [Example Screenshots](#example-screenshots)
 - [Deployment Instructions](#deployment-instructions)
+- [Firebase Setup](#firebase-setup)
+- [Optional Enhancements](#optional-enhancements)
 --- 
 
 ## Features:
