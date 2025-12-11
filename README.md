@@ -1,7 +1,10 @@
 <img width="1879" height="905" alt="image" src="https://github.com/user-attachments/assets/964ab0f6-0d9d-49a6-8f0a-65ca28cb60fa"/>
+
 # Smart Resume Analyser – AI Powered Resume Evaluation Platform
+
 Smart Resume Analyser is a web platform designed to help students, freshers, and professionals improve their resumes using AI-driven insights. The platform focuses on ATS optimization, formatting accuracy, grammar correction, keyword relevance, and industry-specific enhancement. It enables users to build strong, job-ready resumes using intelligent guidance, analytics, and interactive tools.
 ---
+
 ## Table of Contents**
 - [Features](#features)
 - [Project Structure](#project-structure)
