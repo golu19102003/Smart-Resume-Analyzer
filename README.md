@@ -1,8 +1,7 @@
 <img width="1879" height="905" alt="image" src="https://github.com/user-attachments/assets/964ab0f6-0d9d-49a6-8f0a-65ca28cb60fa" />
-# Smart Resume Analyser – AI-Powered Resume Evaluation Platform:
+# Smart Resume Analyser – AI Powered Resume Evaluation Platform:
 Smart Resume Analyser is a web platform designed to help students, freshers, and professionals improve their resumes using AI-driven insights. The platform focuses on ATS optimization, formatting accuracy, grammar correction, keyword relevance, and industry-specific enhancement. It enables users to build strong, job-ready resumes using intelligent guidance, analytics, and interactive tools.
 ---
-
 ## Table of Contents**
 - [Features](#features)
 - [Project Structure](#project-structure)
@@ -73,6 +72,8 @@ npm start
 ```
 The app will be available at [http://localhost:3000].
 
+---
+
 ## Main Code Sequences & Architecture
 ### Frontend (HTML/CSS/JS)
 #### `index.html`
@@ -102,6 +103,7 @@ The app will be available at [http://localhost:3000].
 - Sends extracted resume text to backend.
 - Renders AI suggestions (formatting, keywords, grammar, etc.).
 - Shows job match %, improvement stats, and color-coded badges.
+---
 
 ### Backend (Node.js / Express / OpenAI)
 #### `server.js`
@@ -122,6 +124,7 @@ The app will be available at [http://localhost:3000].
 - Matches job-role keywords.
 - Simulates ATS scoring (structure, readability, bullets, impact metrics).
 - Provides AI-driven suggestions and rewrites.
+---
 
 ## Authentication
 - Email & password login.
@@ -129,6 +132,7 @@ The app will be available at [http://localhost:3000].
 - Password reset.
 - Session tracking.
 - Saves previous analysis reports.
+---
 
 ## AI Chatbot Integration
 - Resume rewriting.
@@ -136,16 +140,19 @@ The app will be available at [http://localhost:3000].
 - ATS keyword suggestions.
 - Interview preparation tips.
 - Context-aware responses.
+---
 
 ## Customization
 - Edit colors & fonts in stylesheet.css.
 - Add new templates in /templates.
 - Update job-role keywords in analyser.js.
 - Add new backend AI features easily.
+---
 
 ## License
 - Educational and non-commercial use only.
 - Contact developer for commercial usage.
+---
 
 ## Contact
 For feedback, contributions, or queries:
@@ -154,6 +161,8 @@ For feedback, contributions, or queries:
 💻 GitHub: https://github.com/golu19102003
 🐦 Twitter: https://x.com/Pranjal76009498
 📸 Instagram: https://www.instagram.com/pranjal19102003_2.0/---
+
+**.**
 
 **Example Screenshots**
 Dashboard Home
@@ -198,6 +207,3 @@ Runs at: http://localhost:3000
 - Enable automatic HTTPS.
 - Add analytics for user tracking.
 - Improve performance using caching/CDN.
-
-Performance Optimization
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
