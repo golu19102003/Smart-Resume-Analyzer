@@ -1,5 +1,5 @@
-<img width="1879" height="905" alt="image" src="https://github.com/user-attachments/assets/964ab0f6-0d9d-49a6-8f0a-65ca28cb60fa" />
-# Smart Resume Analyser – AI Powered Resume Evaluation Platform:
+<img width="1879" height="905" alt="image" src="https://github.com/user-attachments/assets/964ab0f6-0d9d-49a6-8f0a-65ca28cb60fa"/>
+# Smart Resume Analyser – AI Powered Resume Evaluation Platform
 Smart Resume Analyser is a web platform designed to help students, freshers, and professionals improve their resumes using AI-driven insights. The platform focuses on ATS optimization, formatting accuracy, grammar correction, keyword relevance, and industry-specific enhancement. It enables users to build strong, job-ready resumes using intelligent guidance, analytics, and interactive tools.
 ---
 ## Table of Contents**
@@ -162,25 +162,22 @@ For feedback, contributions, or queries:
 🐦 Twitter: https://x.com/Pranjal76009498
 📸 Instagram: https://www.instagram.com/pranjal19102003_2.0/---
 
-**.**
+**Smart Resume Analyser – AI Powered Resume Evaluation Platform**
 
 **Example Screenshots**
 Dashboard Home
-
 <img width="1873" height="892" alt="image" src="https://github.com/user-attachments/assets/2e36905b-745d-4265-859b-ab8e8520de50" />
 
 Resume Upload
-
 <img width="1879" height="902" alt="image" src="https://github.com/user-attachments/assets/e182589c-a895-481e-9829-5f92126dbb24" />
 
 ATS Score Report
-
 <img width="1883" height="892" alt="image" src="https://github.com/user-attachments/assets/222718e8-9f16-42fa-af70-9043393b190d" />
 
 AI Suggestions Panel
-
 <img width="1870" height="885" alt="image" src="https://github.com/user-attachments/assets/f423e3b3-6f08-4710-be0d-00c125abde26" />
 
+---
 
 ## Deployment Instructions:
 ### Local Deployment
@@ -190,6 +187,7 @@ npm install
 npm start
 Runs at: http://localhost:3000
 ```
+---
 
 ### Cloud Deployment (Render/Heroku/Vercel)
 - Push project to GitHub.
@@ -197,13 +195,16 @@ Runs at: http://localhost:3000
 - Add env variables:
 - OPENAI_API_KEY
 - Deploy.
+---
 
 ### Firebase Setup
 - Enable Email/Password + Google Auth.
 - Add Firebase config to auth.js.
+---
 
 ### Optional Enhancements.
 - Set up a custom domain.
 - Enable automatic HTTPS.
 - Add analytics for user tracking.
 - Improve performance using caching/CDN.
+---
