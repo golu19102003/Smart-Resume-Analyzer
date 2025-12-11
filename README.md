@@ -167,7 +167,8 @@ For feedback, contributions, or queries:
 
 **Smart Resume Analyser – AI Powered Resume Evaluation Platform**
 
-**Example Screenshots**
+## Example Screenshots
+
 Dashboard Home
 <img width="1873" height="892" alt="image" src="https://github.com/user-attachments/assets/2e36905b-745d-4265-859b-ab8e8520de50" />
 
