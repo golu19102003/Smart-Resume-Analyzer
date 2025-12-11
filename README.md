@@ -223,57 +223,91 @@ Use this template:
 
 **// auth.js**
 
-- import { createClient } from '@supabase/supabase-js';
+import { createClient } from '@supabase/supabase-js';
+
 const supabaseUrl = "https://YOUR-PROJECT-ID.supabase.co";
+
 const supabaseKey = "YOUR_PUBLIC_ANON_KEY";
+
 export const supabase = createClient(supabaseUrl, supabaseKey);
 
 **// -------- AUTH FUNCTIONS --------**
 
 **// Email Signup**
-- export async function signUpWithEmail(email, password) {
-  const { data, error } = await supabase.auth.signUp({ email, password });
-  return { data, error };
+
+export async function signUpWithEmail(email, password) {
+
+const { data, error } = await supabase.auth.signUp({ email, password });
+
+return { data, error };
+
 }
 
 **// Email Login**
-- export async function signInWithEmail(email, password) {
-  const { data, error } = await supabase.auth.signInWithPassword({
-    email,
-    password,
-  });
-  return { data, error };
+
+export async function signInWithEmail(email, password) {
+
+const { data, error } = await supabase.auth.signInWithPassword({
+
+email,
+
+password,
+
+});
+
+return { data, error };
+
 }
 
 **// Google Login**
-- export async function signInWithGoogle() {
+
+export async function signInWithGoogle() {
+
   const { data, error } = await supabase.auth.signInWithOAuth({
+  
     provider: "google",
+    
     options: {
+    
       redirectTo: window.location.origin, // redirect after login
+    
     },
+  
   });
+  
   return { data, error };
+
 }
 
 **// Sign Out**
-- export async function signOutUser() {
-  const { error } = await supabase.auth.signOut();
-  return { error };
+
+export async function signOutUser() {
+
+const { error } = await supabase.auth.signOut();
+  
+return { error };
+
 }
 
 #### 3. Use in Your Frontend (Example)
 **Login:**
-- signInWithEmail(email, password).then(({ data, error }) => {
+
+signInWithEmail(email, password).then(({ data, error }) => {
+ 
   if(error) alert(error.message);
+ 
   else alert("Logged in!");
+
 });
 
 **Google Login:**
-- signInWithGoogle();
+
+signInWithGoogle();
 
 **Signup:**
-- signUpWithEmail(email, password);
+
+signUpWithEmail(email, password);
+
 ---
 
 ### Optional Enhancements.
