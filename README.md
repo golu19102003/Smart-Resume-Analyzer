@@ -159,10 +159,15 @@ The app will be available at [http://localhost:3000].
 
 ## Contact
 For feedback, contributions, or queries:
+
 👤 Pranjal Khandelwal
+
 🔗 LinkedIn: https://www.linkedin.com/in/pranjal-khandelwal-1a46682a4/
+
 💻 GitHub: https://github.com/golu19102003
+
 🐦 Twitter: https://x.com/Pranjal76009498
+
 📸 Instagram: https://www.instagram.com/pranjal19102003_2.0/---
 
 **Smart Resume Analyser – AI Powered Resume Evaluation Platform**
